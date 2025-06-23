@@ -58,7 +58,7 @@ appApiRouter.post('/prof_dtls', async (req, res) => {
   var phone_no = data.phone_no.split(' ').join('');
   var pax_id = db_id,
     // fields = "cust_cd, phone, initcap(cust_name)cust_name, email, initcap(present_address)present_address, initcap(nominee)nominee",
-    fields = "member_id cust_cd,d_o_birth,phone_no phone, initcap(member_name)cust_name,'' AS email, address present_address, guardian_name nominee",
+    fields = "member_id cust_cd,d_o_birth,mobile_no phone, initcap(member_name)cust_name,'' AS email, address present_address, guardian_name nominee",
     table_name = "mm_member",
     where = `mobile_no = '${phone_no.length > 10 ? phone_no.slice(-10) : phone_no}'`,
     order = null,
