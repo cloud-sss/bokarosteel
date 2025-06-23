@@ -1,0 +1,163 @@
+<!-- Main Sidebar Container -->
+<aside class="main-sidebar sidebar-dark-primary elevation-4 main_sidebarCustom">
+  <!-- Brand Logo -->
+  <a href="/" class="brand-link navbar-danger navbarDangerCustom">
+    <img
+      src="/dist/img/logo.png"
+      alt="AdminLTE Logo"
+      class="brand-image brandimageCustom"
+    />
+    <span class="brand-text font-weight-light">BOKSTEELECCS</span>
+  </a>
+  <div class="sidebar sidebarCustom">
+    <nav class="mt-2">
+      <ul
+        class="nav nav-pills nav-sidebar flex-column nav-compact nav-child-indent navCustomLeft"
+        data-widget="treeview"
+        role="menu"
+        data-accordion="false"
+      >
+        <!-- <li class="nav-item">
+          <a
+            href="/admin/dashboard"
+            class="nav-link <%= (active=='dashboard') ? 'active' : ''; %>"
+          >
+            <i class="nav-icon fas fa-tachometer-alt"></i>
+            <p>Dashboard</p>
+          </a>
+        </li> -->
+
+        <li class="nav-item">
+          <a
+            href="/admin/calendar"
+            class="nav-link <%= (active=='calendar' || active=='calendar_edit') ? 'active' : ''; %>"
+          >
+            <i class="nav-icon fas fa-calendar"></i>
+            <p>Calendar</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            href="/admin/notification"
+            class="nav-link <%= (active=='notification') ? 'active' : ''; %>"
+          >
+            <i class="nav-icon fas fa-bell"></i>
+            <p>Send Notification</p>
+          </a>
+        </li>
+        <!-- <li class="nav-item">
+          <a
+            href="/admin/reset_mpin"
+            class="nav-link <%= (active=='reset_mpin') ? 'active' : ''; %>"
+          >
+            <i class="nav-icon fas fa-key"></i>
+            <p>Reset mPIN</p>
+          </a>
+        </li> -->
+        
+        <!-- <li class="nav-item">
+          <a href="/admin/request" class="nav-link <%= (active=='request' || active=='request_edit') ? 'active' : ''; %>">
+            <i class="nav-icon fas fa-paper-plane"></i>
+            <p>Request</p>
+          </a>
+        </li> -->
+
+        <li class="nav-item">
+          <a href="/admin/feedback" class="nav-link <%= (active=='feedback') ? 'active' : ''; %>">
+            <i class="nav-icon fas fa-comments"></i>
+            <p>Feedback</p>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="/admin/user_list" class="nav-link <%= (active=='user_list') ? 'active' : ''; %>">
+            <i class="nav-icon fas fa-users"></i>
+            <p>User List</p>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="/admin/trans_dtls" class="nav-link <%= (active=='trans_dtls') ? 'active' : ''; %>">
+            <i class="nav-icon fas fa-briefcase"></i>
+            <p>Transaction Details</p>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="/admin/entry_about" class="nav-link <%= (active=='entry_about') ? 'active' : ''; %>">
+            <i class="nav-icon fas fa-info-circle"></i>
+            <p>Entry About</p>
+          </a>
+        </li>
+
+        <!-- <li class="nav-item">
+          <a href="/admin/holiday_home" class="nav-link <%= (active=='holiday_home') ? 'active' : ''; %>">
+            <i class="nav-icon fas fa-home"></i>
+            <p>Holiday Home</p>
+          </a>
+        </li> -->
+
+        <li class="nav-item">
+          <a href="/admin/sec_desk" class="nav-link <%= (active=='sec_desk') ? 'active' : ''; %>">
+            <i class="nav-icon fas fa-users"></i>
+            <p>Secretary's Desk</p>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="/admin/board_member" class="nav-link <%= (active=='board_member') ? 'active' : ''; %>">
+            <i class="nav-icon fas fa-users"></i>
+            <p>Board Member List</p>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="/admin/img_gallery" class="nav-link <%= (active=='img_gallery') ? 'active' : ''; %>">
+            <i class="nav-icon fas fa-image"></i>
+            <p>Image Gallery</p>
+          </a>
+        </li>
+
+        
+        <!-- <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="nav-icon fas fa-address-card"></i>
+            <p>
+              Application Form
+              <i class="fas fa-angle-left right"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="/admin/application_form?flag=TQ%3D%3D" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Membership</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/admin/application_form?flag=Rw%3D%3D" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>General Loan</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/admin/application_form?flag=QQ%3D%3D" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Additional Share</p>
+              </a>
+            </li>
+          </ul>
+        </li> -->
+
+        <li class="nav-item">
+          <a href="/admin/logout" class="nav-link">
+            <i class="nav-icon fas fa-sign-out-alt"></i>
+            <p>Log Out</p>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- /.sidebar-menu -->
+  </div>
+  <!-- /.sidebar -->
+</aside>
