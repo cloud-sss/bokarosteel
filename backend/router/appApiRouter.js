@@ -55,8 +55,7 @@ appApiRouter.post('/has_acc', async (req, res) => {
 
 appApiRouter.post('/prof_dtls', async (req, res) => {
   var data = req.body;
-  //var phone_no = data.phone_no.split(' ').join('');
-  var phone_no = '9433518978';
+  var phone_no = data.phone_no.split(' ').join('');
   var pax_id = db_id,
     // fields = "cust_cd, phone, initcap(cust_name)cust_name, email, initcap(present_address)present_address, initcap(nominee)nominee",
     fields = "member_id cust_cd,d_o_birth + 1 AS d_o_birth,mobile_no phone, initcap(member_name)cust_name,NVL(off_phone_no, '') AS email, address present_address, guardian_name nominee",
